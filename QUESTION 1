@@ -1,0 +1,38 @@
+package labtest3;
+import java.util.Scanner;
+public class Question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanMe = new Scanner(System.in);
+		
+		int num;
+		
+		System.out.println("Please enter the number of words : ");
+		num = scanMe.nextInt();
+		
+		String[]word = new String[num];
+		
+		System.out.println("Please enter the word : ");
+		
+		for(int a = 0; a < num; a ++) {
+			word[a] = scanMe.nextLine();
+			
+			for(int b = 0; b < num; b++)
+				word[b] = scanMe.nextLine();
+		}
+	}
+
+}
+
+Output :
+
+lease enter the number of words : 
+6
+Please enter the word : 
+hello
+world
+hello
+germany
+hello
+berlin
